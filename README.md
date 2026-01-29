@@ -1,9 +1,11 @@
-<pre>AI-Augmented Computational Design of Deep Eutectic Solvents (DES)
+  
+  AI-Augmented Computational Design of Deep Eutectic Solvents (DES)
 
 
 Automated computational pipeline for property-driven design of Deep Eutectic Solvents (DES) integrating quantum chemical calculations (GFN2-xTB) with machine learning. This pipeline transforms raw chemical structures into accurate property predictions through a reproducible four-phase workflow.
 
 Figure : Computational Pipeline Architecture
+<prE>
 ┌─────────────────────────────────────────────────────────────────────┐
 │                      COMPUTATIONAL PIPELINE                         │
 ├─────────────────────────────────────────────────────────────────────┤
@@ -27,7 +29,7 @@ Figure : Computational Pipeline Architecture
 │  Output: des_features_final.csv → Machine Learning Models           │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
-
+</prE>
 Prerequisites
 Python 3.9 or higher
 
