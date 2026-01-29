@@ -1,0 +1,28 @@
+┌─────────────────────────────────────────┐
+│  PHASE 3: QUANTUM DESCRIPTOR CALC.      │
+├─────────────────────────────────────────┤
+│   Input: Optimized XYZ structures       │
+│               ↓                         │
+│     ┌─────────────────────────┐         │
+│     │  Single-Point xTB Calc. │         │
+│     │  • --gfn2 --alpb water  │         │
+│     │  • --pop --vfukui       │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│     ┌─────────────────────────┐         │
+│     │  Descriptor Extraction  │         │
+│     │  • Total energy (Eh)    │         │
+│     │  • HOMO/LUMO (eV)       │         │
+│     │  • Dipole moment (D)    │         │
+│     │  • Solvation energy     │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│     ┌─────────────────────────┐         │
+│     │ Derived Descriptors     │         │
+│     │ • Chemical hardness     │         │
+│     │ • Electrophilicity      │         │
+│     │ • Reactivity indices    │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│       successful_descriptors.csv        │
+└─────────────────────────────────────────┘
