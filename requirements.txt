@@ -1,0 +1,87 @@
+# ============================================================================
+# DES QSPR Pipeline - Requirements
+# ============================================================================
+# Core dependencies for the 4-phase computational pipeline
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# DATA MANIPULATION & SCIENTIFIC COMPUTING
+# ----------------------------------------------------------------------------
+pandas>=1.5.0,<2.0.0        # Data structures and analysis
+numpy>=1.23.0,<2.0.0        # Numerical computing
+scipy>=1.9.0,<2.0.0         # Scientific computing
+sympy>=1.11.0,<2.0.0        # Symbolic mathematics (optional)
+
+# ----------------------------------------------------------------------------
+# CHEMINFORMATICS & CHEMISTRY
+# ----------------------------------------------------------------------------
+rdkit>=2023.03.1            # Molecular informatics (primary)
+openbabel>=3.1.1            # Chemical toolbox (for geometry generation)
+# Note: xTB must be installed separately via conda or manual download
+
+# ----------------------------------------------------------------------------
+# MACHINE LEARNING
+# ----------------------------------------------------------------------------
+scikit-learn>=1.2.0,<1.4.0  # ML algorithms and utilities
+xgboost>=1.7.0,<2.0.0       # Gradient boosting (optional)
+lightgbm>=3.3.0,<4.0.0      # Light gradient boosting (optional)
+
+# ----------------------------------------------------------------------------
+# DATA VISUALIZATION
+# ----------------------------------------------------------------------------
+matplotlib>=3.6.0,<4.0.0    # Plotting library
+seaborn>=0.12.0,<0.13.0     # Statistical visualization
+plotly>=5.13.0,<6.0.0       # Interactive plots (optional)
+
+# ----------------------------------------------------------------------------
+# UTILITIES & FILE HANDLING
+# ----------------------------------------------------------------------------
+tqdm>=4.64.0,<5.0.0         # Progress bars
+pyyaml>=6.0                 # Configuration files
+joblib>=1.2.0,<2.0.0        # Parallel processing
+psutil>=5.9.0,<6.0.0        # System monitoring
+
+# ----------------------------------------------------------------------------
+# DATA FORMATS & PARSING
+# ----------------------------------------------------------------------------
+networkx>=3.0,<4.0          # Graph manipulation
+lxml>=4.9.0,<5.0.0          # XML parsing
+requests>=2.28.0,<3.0.0     # HTTP requests (for data fetching)
+
+# ----------------------------------------------------------------------------
+# NOTEBOOK SUPPORT (Optional)
+# ----------------------------------------------------------------------------
+jupyter>=1.0.0,<2.0.0       # Jupyter notebook
+ipykernel>=6.0.0,<7.0.0     # IPython kernel
+ipywidgets>=8.0.0,<9.0.0    # Interactive widgets
+
+# ----------------------------------------------------------------------------
+# TESTING & DEVELOPMENT (Optional)
+# ----------------------------------------------------------------------------
+pytest>=7.0.0,<8.0.0        # Testing framework
+pytest-cov>=4.0.0,<5.0.0    # Test coverage
+black>=23.0.0,<24.0.0       # Code formatting
+flake8>=6.0.0,<7.0.0        # Code linting
+mypy>=1.0.0,<2.0.0          # Static type checking
+
+# ----------------------------------------------------------------------------
+# SPECIFIC VERSIONS FOR COMPATIBILITY
+# ----------------------------------------------------------------------------
+# RDKit and OpenBabel may have specific version dependencies
+# If issues arise, try these pinned versions:
+# rdkit==2023.03.1
+# openbabel==3.1.1
+
+# ============================================================================
+# INSTALLATION NOTES:
+# ============================================================================
+# 1. For RDKit and OpenBabel, use conda for easiest installation:
+#    conda install -c conda-forge rdkit openbabel
+#
+# 2. xTB must be installed separately:
+#    conda install -c conda-forge xtb
+#    OR download from: https://github.com/grimme-lab/xtb
+#
+# 3. Install all requirements:
+#    pip install -r requirements.txt
+# ============================================================================
