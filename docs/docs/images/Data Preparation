@@ -1,0 +1,22 @@
+┌─────────────────────────────────────────┐
+│         PHASE 1: DATA PREPARATION       │
+├─────────────────────────────────────────┤
+│              Input: raw_dataset.csv     │
+│               ↓                         │
+│     ┌─────────────────────────┐         │
+│     │  SMILES Validation      │         │
+│     │  • RDKit sanitization   │         │
+│     │  • Salt separation      │         │
+│     │  • Format correction    │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│     ┌─────────────────────────┐         │
+│     │  2D Descriptor Calc.    │         │
+│     │  • Molecular weight     │         │
+│     │  • LogP                 │         │
+│     │  • HBD/HBA counts       │         │
+│     │  • TPSA                 │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│ cleaned_dataset.csv + unique_molecules  │
+└─────────────────────────────────────────┘
