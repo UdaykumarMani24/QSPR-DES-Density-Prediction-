@@ -1,0 +1,21 @@
+┌─────────────────────────────────────────┐
+│    PHASE 2: GEOMETRY OPTIMIZATION       │
+├─────────────────────────────────────────┤
+│     Input: SMILES from Phase 1          │
+│               ↓                         │
+│     ┌─────────────────────────┐         │
+│     │   3D Structure Gen.     │         │
+│     │  • OpenBabel MMFF94     │         │
+│     │  • Initial coordinates  │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│     ┌─────────────────────────┐         │
+│     │ Quantum Optimization    │         │
+│     │ • GFN2-xTB method       │         │
+│     │ • Gradient < 0.01 Eh/a₀ │         │
+│     │ • Convergence check     │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│          optimized_structures/          │
+│        (XYZ files for each molecule)    │
+└─────────────────────────────────────────┘
