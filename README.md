@@ -29,7 +29,7 @@ Figure : Computational Pipeline Architecture
 │  Output: des_features_final.csv → Machine Learning Models           │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘
-</prE>
+
 Prerequisites
 Python 3.9 or higher
 
@@ -80,3 +80,4 @@ Phase 4 Outputs:
 ---------------
 des_features_final.csv - Final feature matrix (13 features)
 descriptor_matching_log.csv - Component matching details
+</prE>
