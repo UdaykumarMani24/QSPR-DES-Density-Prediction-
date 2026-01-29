@@ -1,0 +1,28 @@
+┌─────────────────────────────────────────┐
+│   PHASE 4: FEATURE ENGINEERING          │
+├─────────────────────────────────────────┤
+│  Input: Descriptors + Composition       │
+│               ↓                         │
+│     ┌─────────────────────────┐         │
+│     │  Name Matching & Merge  │         │
+│     │  • SMILES to name map   │         │
+│     │  • Fuzzy matching       │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│     ┌─────────────────────────┐         │
+│     │ DES-Level Calculations  │         │
+│     │ • Molar-weighted avg.   │         │
+│     │ • Inter-component diff. │         │
+│     │ • Stoichiometric ratios │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│     ┌─────────────────────────┐         │
+│     │  Final Feature Set      │         │
+│     │ • 13 key features       │         │
+│     │ • Interpretable names   │         │
+│     │ • ML-ready format       │         │
+│     └──────────┬──────────────┘         │
+│                ↓                        │
+│         des_features_final.csv          │
+│          (Ready for ML modeling)        │
+└─────────────────────────────────────────┘
